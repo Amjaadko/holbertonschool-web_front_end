@@ -7,12 +7,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-/* Universal box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 html {
   line-height: 1.15; /* 1 */
@@ -381,6 +375,12 @@ template {
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
+}
+/* Universal box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
