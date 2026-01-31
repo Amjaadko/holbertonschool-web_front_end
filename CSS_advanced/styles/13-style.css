@@ -46,7 +46,7 @@ body {
 }
 
 /* Links */
-a[href]:link {
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
@@ -60,7 +60,7 @@ a[href]:hover {
 }
 
 a[href]:active {
-  background-color: var(--color-light-grey);
+  background: var(--color-light-grey);
 }
 
 /* Section header */
