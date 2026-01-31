@@ -1,10 +1,4 @@
 /* Behavior of the scroll to be as fluid as possible */
-html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
-}
-
-/* Custom properties */
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -36,7 +30,11 @@ html {
   --section-title-color: var(--color-black);
 }
 
-/* Base styles */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
@@ -45,7 +43,17 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Links */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Links (must target only anchors with a hyperlink) */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
@@ -63,16 +71,14 @@ a[href]:active {
   background: var(--color-light-grey);
 }
 
-/* Section header */
-.section-header {
-  text-align: var(--section-header-align);
+.visually-hidden {
+  display: none;
 }
 
 .card-category {
   color: var(--color-primary);
 }
 
-/* Section title */
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -81,25 +87,14 @@ a[href]:active {
   color: var(--section-title-color);
 }
 
-/* Section tagline */
+/* Must be just above .section-tagline */
+.section-header {
+  text-align: var(--section-header-align);
+}
+
 .section-tagline {
   color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
-  font-weight: var(--font-weight-bold);
-}
-
-.visually-hidden {
-  display: none;
-}
-
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
